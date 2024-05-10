@@ -8,6 +8,6 @@ load_dotenv()
 
 def db_connect():
     import os
-    engine = create_engine(os.getenv('DATABASE_URL'))
+    engine = create_engine(os.getenv('https://raw.githubusercontent.com/4GeeksAcademy/data-preprocessing-project-tutorial/main/AB_NYC_2019.csv'))
     engine.connect()
     return engine
